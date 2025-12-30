@@ -1,40 +1,118 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0d1b2a">
-    <link rel="manifest" href="manifest.json">
-    <title>Faculdade Sincro - Portal Oficial</title>
+    <title>Faculdade Sincro - Portal Acadêmico</title>
     <style>
-        body {
-            font-family: "Times New Roman", Times, serif;
-            background: #0d1b2a;
-            color: #ffffff;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .header {
-            text-align: center;
-            padding: 50px 20px;
-            background: #0d1b2a;
-            width: 100%;
-            border-bottom: 1px solid #c9a86a;
-            box-sizing: border-box;
-        }
-        .logo-main {
-            width: 100px;
-            height: auto;
-            margin-bottom: 20px;
-            filter: grayscale(20%);
-        }
-        h1 {
-            color: #c9a86a;
-            margin: 10px 0;
+        body { font-family: 'Times New Roman', serif; background: #0d1b2a; color: #e0e1dd; margin: 0; }
+        header { text-align: center; padding: 50px 20px; border-bottom: 2px solid #c9a86a; }
+        .logo { width: 120px; margin-bottom: 15px; }
+        h1 { color: #c9a86a; text-transform: uppercase; letter-spacing: 2px; margin: 0; }
+        .slogan { font-style: italic; opacity: 0.8; margin-bottom: 20px; }
+        
+        /* Menu de Navegação Rápida */
+        nav { background: #1b263b; padding: 10px; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: #c9a86a; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 14px; }
+
+        .section-title { width: 100%; text-align: center; color: #c9a86a; margin: 40px 0 20px; text-transform: uppercase; border-bottom: 1px solid rgba(201,168,106,0.2); padding-bottom: 10px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 0 20px 40px; max-width: 1200px; margin: 0 auto; }
+        
+        .card { background: rgba(27, 38, 59, 0.7); border: 1px solid #415a77; padding: 20px; border-radius: 4px; text-decoration: none; color: white; transition: 0.3s; }
+        .card:hover { border-color: #c9a86a; background: #1b263b; transform: translateY(-3px); }
+        .card h3 { color: #c9a86a; margin-top: 0; font-size: 18px; }
+        .card p { font-size: 14px; opacity: 0.8; line-height: 1.5; font-family: Arial, sans-serif; }
+
+        .social-bar { text-align: center; padding: 20px; background: #0a1420; }
+        footer { text-align: center; padding: 40px; font-size: 12px; border-top: 1px solid #c9a86a; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo-512.png" alt="Faculdade Sincro" class="logo">
+    <h1>Faculdade Sincro</h1>
+    <div class="slogan">Teologia e Ciências Comportamentais</div>
+</header>
+
+<nav>
+    <a href="#cursos">CURSOS</a>
+    <a href="#ferramentas">FERRAMENTAS</a>
+    <a href="#institucional">INSTITUCIONAL</a>
+    <a href="#midia">MeDIA</a>
+</nav>
+
+<div class="grid">
+    <div class="section-title" id="institucional">Gestão e Identidade</div>
+    <a href="#" class="card">
+        <h3>Capelania SINCRO</h3>
+        <p>Acesso à plataforma de ensino, suporte técnico e materiais didáticos integrados.</p>
+    </a>
+    <a href="#" class="card">
+        <h3>Portal de Credenciamento</h3>
+        <p>Emissão e validação de credenciais profissionais para capelães formados.</p>
+    </a>
+    <a href="#" class="card">
+        <h3>Secretaria Acadêmica</h3>
+        <p>Módulo em desenvolvimento para matrículas e certificações automatizadas.</p>
+    </a>
+
+    <div class="section-title" id="cursos">Formação Acadêmica</div>
+    <a href="#" class="card">
+        <h3>Hebraico Bíblico</h3>
+        <p>Alfabetização e fundamentos da língua original das Escrituras.</p>
+    </a>
+    <a href="#" class="card">
+        <h3>Oratória Cristã</h3>
+        <p>Técnicas de comunicação e exposição bíblica para lideranças.</p>
+    </a>
+    <a href="#" class="card">
+        <h3>Teologia (Básico ao Bacharel)</h3>
+        <p>Níveis Básico, Médio e Superior para formação ministerial completa.</p>
+    </a>
+    <a href="#" class="card">
+        <h3>Liderança Pastoral</h3>
+        <p>Capacitação para gestão de comunidades e aconselhamento cristão.</p>
+    </a>
+
+    <div class="section-title" id="ferramentas">Suporte e Ferramentas</div>
+    <a href="#" class="card">
+        <h3>Terapeuta Digital</h3>
+        <p>Suporte emocional e comportamental com base no método Sincrologia.</p>
+    </a>
+    <a href="#" class="card">
+        <h3>Calculadoras MC e SC</h3>
+        <p>Ferramentas exclusivas de métricas comportamentais e sincrônicas.</p>
+    </a>
+    <a href="#" class="card">
+        <h3>Lapada Diária</h3>
+        <p>Reflexões comportamentais e bíblicas para o fortalecimento do Estar.</p>
+    </a>
+    <a href="#" class="card">
+        <h3>Fórum Acadêmico</h3>
+        <p>Espaço de debate e interação entre alunos e professores da Faculdade.</p>
+    </a>
+
+    <div class="section-title" id="midia">Cultura e Adoração</div>
+    <a href="https://spotify.com" class="card">
+        <h3>Ekletico Cristão (Spotify)</h3>
+        <p>Álbum de hinos e composições originais para edificação espiritual.</p>
+    </a>
+    <a href="#" class="card">
+        <h3>Redes Sociais Oficiais</h3>
+        <p>Acompanhe nossos conteúdos no Instagram, YouTube e Facebook.</p>
+    </a>
+</div>
+
+<footer>
+    <b>Faculdade Sincro</b> &copy; 2025 - Todos os direitos reservados.<br>
+    Amparo Legal: Constituição Federal, Art. 5º, VII e VIII.<br>
+    Inspirado pelo Método de Sincrologia e Qualificação do Estar.
+</footer>
+
+</body>
+</html>            margin: 10px 0;
             font-size: 28px;
             text-transform: uppercase;
             letter-spacing: 2px;
