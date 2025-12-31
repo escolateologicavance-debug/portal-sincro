@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<head>
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#003366">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curso Básico em Teologia - AVANCE</title>
+<style>
+:root { --azul-m:#001f3f; --azul-c:#0074D9; --br:#ffffff; }
+body{ margin:0; font-family:'Segoe UI',Arial,sans-serif; background:var(--azul-m); color:var(--br); text-align:center; }
+.container{ max-width:650px; margin:auto; padding:20px; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculdade Sincro</title>
+    <style>
+        body { 
+            font-family: 'Times New Roman', serif; 
+            background: #0d1b2a; 
+            color: #ffffff; 
+            margin: 0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            min-height: 100vh; 
+        }
+        header { 
+            text-align: center; 
+            padding: 50px 20px; 
+            width: 100%; 
+            border-bottom: 1px solid #c9a86a; 
+        }
+        h1 { 
+            margin: 10px 0; 
+            font-size: 28px; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            font-weight: normal; 
+            color: #c9a86a;
+        }
+        .slogan { 
+            opacity: 0.8; 
+            font-size: 16px; 
+            font-style: italic; 
+            letter-spacing: 1px; 
+            margin-top: 10px; 
+        }
+        main.container { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 30px; 
+            padding: 40px 20px; 
+            max-width: 1100px; 
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+        .card { 
+            background: rgba(27, 38, 59, 0.5); 
+            border: 1px solid #c9a86a; 
+            padding: 35px 25px; 
+            text-align: center; 
+            transition: 0.4s; 
+            text-decoration: none; 
+            color: #ffffff; 
+        }
+        .card:hover { 
+            background: #1b263b; 
+            box-shadow: inset 0 0 15px rgba(201, 168, 106, 0.2); 
+            border-width: 2px; 
+        }
+        .card-title { 
+            color: #c9a86a; 
+            font-size: 18px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            margin-bottom: 15px; 
+            display: block; 
+            font-weight: bold; 
+        }
+        .card p { 
+            font-size: 15px; 
+            opacity: 0.8; 
+            line-height: 1.6; 
+            margin: 0; 
+            font-family: Arial, sans-serif; 
+        }
+        .footer { 
+            margin-top: auto; 
+            padding: 40px; 
+            font-size: 13px; 
+            opacity: 0.6; 
+            text-align: center; 
+            border-top: 1px solid rgba(201, 168, 106, 0.1); 
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+        .footer b { color: #c9a86a; }
+        @media (max-width: 600px) { 
+            h1 { font-size: 24px; } 
+            .container { padding: 20px; } 
+        }
+    </style>
+</head>
+<script>
+  // Este código registra o Service Worker (sw.js) que você vai criar
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then(() => console.log("Serviço de App Ativo!"))
+      .catch(err => console.log("Erro no App:", err));
+  }
+</script>
+
+<body>
+    <header>
+        <h1>Faculdade Sincro</h1>
+        <div class="slogan">Teologia e Ciências Comportamentais</div>
+    </header>
+
+    <main class="container">
+        <!-- Cursos -->
+        <a href="#" class="card">
+            <span class="card-title">Capelania Sincro</span>
+            <p>Acesso à plataforma de ensino, suporte técnico e materiais didáticos integrados.</p>
+        </a>
+        <a href="#" class="card">
+            <span class="card-title">Portal de Credenciamento</span>
+            <p>Sistema oficial para emissão, consulta e validação de credenciais profissionais.</p>
+        </a>
+        <a href="#" class="card">
+            <span class="card-title">Secretaria Acadêmica</span>
+            <p>Módulo em desenvolvimento: Gestão de matrículas e certificações automatizadas.</p>
+        </a>
+        <a href="#" class="card">
+            <span class="card-title">Hebraico Bíblico</span>
+            <p>Alfabetização e fundamentos da língua original das Escrituras.</p>
+        </a>
+        <a href="#" class="card">
+            <span class="card-title">Oratória Cristã</span>
+            <p>Técnicas de comunicação e exposição bíblica para lideranças.</p>
+        </a>
+        <a href="#" class="card">
+            <span class="card-title">Teologia (Básico ao Bacharel)</span>
+            <p>Níveis Básico, Médio e Superior para formação ministerial completa.</p>
+        </a>
+        <a href="#" class="card">
+            <span class="card-title">Liderança Pastoral</span>
+            <p>Capacitação para gestão de comunidades e aconselhamento cristão.</p>
+        </a>
+        <a href="#" class="card">
+            <span class="card-title">Terapeuta Digital</span>
+            <p>Suporte emocional e comportamental com base no método Sincrologia.</p>
+        </a>
+        <a href="#" class="card">
+            <span class="card-title">Calculadoras MC e SC</span>
+            <p>Ferramentas exclusivas de métricas comportamentais e sincrônicas.</p>
+        </a>
+        <a href="#" class="card">
+            <span class="card-title">Lapada Diária</span>
+            <p>Reflexões comportamentais e bíblicas para o fortalecimento do Estar.</p>
+        </a>
+        <a href="#" class="card">
+            <span class="card-title">Fórum Acadêmico</span>
+            <p>Espaço de debate e interação entre alunos e professores da Faculdade.</p>
+        </a>
+        <a href="#" class="card">
+            <span class="card-title">Ekletico Cristão (Spotify)</span>
+            <p>Álbum de hinos e composições originais para edificação espiritual.</p>
+        </a>
+    </main>
+
+    <div class="footer">
+        <b>Faculdade Sincro</b> © 2025 - Todos os direitos reservados.<br>
+        Fundamentação Legal: Constituição Federal, Art. 5º, VII e VIII.<br>
+        Inspirado pelo Método de Sincrologia e Qualificação do Estar.
+    </div>
+</body>
+</html>
